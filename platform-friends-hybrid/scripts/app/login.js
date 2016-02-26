@@ -26,8 +26,10 @@ app.Login = (function () {
                 app.mobileApp.navigate('views/noAppId.html', 'fade');
             }
 
-            $loginUsername = $('#loginUsername');
-            $loginPassword = $('#loginPassword');
+            //$loginUsername = $('#loginUsername');
+            //$loginPassword = $('#loginPassword');
+            $loginUsername = $('pepito');
+            $loginPassword = $('pepito');
 
             if (!isFacebookLogin) {
                 $('#loginWithFacebook').addClass('disabled');
@@ -58,9 +60,10 @@ app.Login = (function () {
         // Authenticate to use Backend Services as a particular user
         var login = function () {
 
-            var username = $loginUsername.val();
-            var password = $loginPassword.val();
-            
+            //var username = $loginUsername.val();
+            //var password = $loginPassword.val();
+            var username = "pepito";
+            var password = "pepito";
             app.mobileApp.showLoading();
 
             // Authenticate using the username and password
